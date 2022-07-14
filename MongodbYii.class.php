@@ -9,7 +9,7 @@ class MongodbYii{
         $this->manager = new MongoDB\Driver\Manager('mongodb://'.MONGO_LAN_IP);
         $this->writeconcern = new MongoDB\Driver\WriteConcern(MongoDB\Driver\WriteConcern::MAJORITY, 1000);
         $this->readpreference = new MongoDB\Driver\ReadPreference(MongoDB\Driver\ReadPreference::RP_PRIMARY);
-        $this->dbname = "95xiu";
+        $this->dbname = "";
         $this->collection = "";
     }
 
